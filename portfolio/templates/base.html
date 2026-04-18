@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="pt">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>WalTerLanDd - Portfólio</title>
+        
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    </head>
+
+    <body>
+
+        <div id="onboarding" class="onboarding-screen">
+
+            <div class="onboarding-content">
+
+                <h1 class="onboarding-logo">WalTer<span>LanDd</span></h1>
+
+                <p class="onboarding-text">A afinar os amplificadores...</p>
+
+                <button id="enter-site" class="btn-primary">ENTRAR</button>
+
+            </div>
+
+        </div>
+
+        {% include 'navbar.html' %}
+
+        <div id="overlay-menu" class="overlay">
+
+            <button id="close-menu" class="close-btn">&times;</button>
+
+            <nav class="overlay-content">
+                <a href="{% url 'home' %}">Início</a>
+                <a href="{% url 'team' %}">Equipa</a>
+                <a href="{% url 'portfolio' %}">Portfólio</a>
+                <a href="{% url 'settings' %}">Definições</a>
+            </nav>
+
+        </div>
+
+        <main>
+            {% block content %}
+            {% endblock %}
+        </main>
+
+        {% include 'footer.html' %}
+
+        <script src="{% static 'js/main.js' %}"></script>
+
+    </body>
+
+</html>

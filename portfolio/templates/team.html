@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% load static %} {% block content %}
+
+    <section class="container" style="padding: 50px 20px; max-width: 1200px; margin: 0 auto;">
+
+        <h2 style="color: var(--accent-color); text-transform: uppercase; letter-spacing: 5px; margin-bottom: 40px; text-align: center;">A Linha da Frente</h2>
+
+        <div style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: center;">
+            
+            <div style="background: var(--bg-military); padding: 40px; border-top: 5px solid var(--accent-color); flex: 1; min-width: 300px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+                
+                <img src="{% static 'img/WalTerLanDd.png' %}" alt="WalterLanDd" style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%; margin: 0 auto 20px; border: 3px solid var(--text-main); display: block;">
+                
+                <h3 style="color: #fff; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 5px;">WalterLanDd</h3>
+                <h5 style="color: var(--accent-color); margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px;">Fundador & Arquiteto Web</h5>
+                <p style="color: #aaa; line-height: 1.6;">O cérebro técnico por trás da operação. Focado em rasgar código limpo e montar a infraestrutura de todo o ecossistema com atitude e precisão militar.</p>
+            
+            </div>
+
+            <div style="background: var(--bg-military); padding: 40px; border-top: 5px solid var(--accent-color); flex: 1; min-width: 300px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+                
+                <img src="{% static 'img/rucaben.png' %}" alt="Ruben Matos" style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%; margin: 0 auto 20px; border: 3px solid var(--text-main); display: block;">
+                
+                <h3 style="color: #fff; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 5px;">Ruben Matos</h3>
+                <h5 style="color: var(--accent-color); margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px;">Co-Fundador & Visionário</h5>
+                <p style="color: #aaa; line-height: 1.6;">A força motriz que completa a equipa do Grande Projeto. Focado em alinhar a estratégia geral e afinar os detalhes para que o impacto seja brutal.</p>
+            
+            </div>
+
+        </div>
+
+    </section>
+
+{% endblock %}

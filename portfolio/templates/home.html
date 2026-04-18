@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <section class="hero-section">
+
+        <div class="hero-content">
+
+            <h1 class="hero-title">BEM-VINDO AO <span class="highlight">CAOS</span> CONTROLADO</h1>
+
+            <p class="hero-subtitle">Design. Código. Atitude.</p>
+            
+            <div class="hero-actions">
+                <a href="{% url 'portfolio' %}" class="btn-primary">Ver Portfólio</a>
+                <a href="{% url 'team' %}" class="btn-secondary">A Equipa</a>
+            </div>
+
+        </div>
+
+    </section>
+
+{% endblock %}

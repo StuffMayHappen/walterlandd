@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <section class="container" style="padding: 50px 20px; max-width: 800px; margin: 0 auto;">
+
+        <h2 style="color: var(--text-highlight); text-transform: uppercase; letter-spacing: 5px;">Definições de Sistema</h2>
+        
+        <div style="background: var(--bg-military); padding: 30px; border: 1px solid #333; margin-top: 30px;">
+
+            <h4 style="color: var(--accent-color); text-transform: uppercase; letter-spacing: 2px;">Visual / Atitude</h4>
+
+            <hr style="border: 0; border-top: 1px solid #222; margin: 20px 0;">
+            
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 30px;">
+
+                <div>
+                    <label style="color: #fff; display: block; font-size: 1.1rem;">Modo Dinâmico</label>
+                    <small style="color: #666;">A cor de destaque muda a cada 2 minutos.</small>
+                </div>
+
+                <input type="checkbox" id="dynamic-mode-toggle" style="width: 25px; height: 25px; cursor: pointer;">
+
+            </div>
+
+            <div id="static-color-container" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 30px;">
+
+                <div>
+                    <label style="color: #fff; display: block; font-size: 1.1rem;">Cor Estática</label>
+                    <small style="color: #666;">Escolhe o teu tom de ataque manual.</small>
+                </div>
+
+                <input type="color" id="accent-picker" style="background: none; border: none; width: 50px; height: 50px; cursor: pointer;">
+
+            </div>
+
+            <hr style="border: 0; border-top: 1px solid #222; margin: 20px 0;">
+            
+            <button id="save-settings-btn" class="btn-primary" style="width: 100%;">GUARDAR DEFINIÇÕES</button>
+            
+            <p id="save-feedback" style="color: #4CAF50; text-align: center; margin-top: 15px; display: none; font-weight: bold; letter-spacing: 2px;">CONFIGURAÇÕES GUARDADAS!</p>
+        
+        </div>
+
+    </section>
+
+{% endblock %}

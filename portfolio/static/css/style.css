@@ -1,0 +1,311 @@
+:root {
+    --bg-dark: #121212;
+    --bg-military: #1a1c19; 
+    --text-main: #e0e0e0;
+    --accent-color: #d92b2b;
+    --nav-bg: rgba(20, 20, 20, 0.95);
+    --text-highlight: #ffffff;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/* Base para os links e botões manterem a atitude */
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--text-highlight);
+}
+
+/* --- NAVBAR --- */
+.navbar {
+    background-color: var(--nav-bg);
+    border-bottom: 2px solid var(--accent-color);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--text-highlight);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: var(--accent-color);
+}
+
+/* --- BURGER BUTTON --- */
+.burger-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.burger-btn span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: var(--text-main);
+    transition: all 0.3s ease;
+}
+
+.burger-btn:hover span {
+    background-color: var(--accent-color);
+}
+
+/* --- MENU OVERLAY --- */
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    left: 0;
+    background-color: rgba(18, 18, 18, 0.98);
+    overflow-y: hidden;
+    transform: translateX(100%);
+    transition: transform 0.4s ease-in-out;
+}
+
+.overlay.active {
+    transform: translateX(0);
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 50px;
+    color: var(--text-main);
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close-btn:hover {
+    color: var(--accent-color);
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.overlay-content a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--text-main);
+    display: block;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.overlay-content a:hover {
+    color: var(--accent-color);
+    transform: scale(1.1);
+}
+
+/* --- FOOTER --- */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--bg-military);
+    color: #666;
+    font-size: 0.9rem;
+    border-top: 1px solid #333;
+}
+
+/* --- HOME (HERO SECTION) --- */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+    animation: fadeIn 1s ease-out;
+}
+
+.hero-title {
+    font-size: 4.5rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--text-main);
+    line-height: 1.1;
+}
+
+.hero-title .highlight {
+    color: var(--accent-color);
+    text-shadow: 4px 4px 0px rgba(0,0,0,0.8);
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+    color: #aaa;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+/* --- BOTÕES COM ATITUDE --- */
+.hero-actions {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 3px solid var(--accent-color);
+    transition: all 0.3s ease;
+    letter-spacing: 2px;
+}
+
+.btn-primary {
+    background-color: var(--accent-color);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    color: var(--accent-color);
+    box-shadow: 0 0 15px var(--accent-color);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--accent-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--accent-color);
+    color: #fff;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- NOVO ESTILO DO BOTÃO MENU --- */
+.menu-text {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--text-main);
+    letter-spacing: 3px;
+    transition: color 0.3s ease;
+}
+
+.burger-btn:hover .menu-text {
+    color: var(--accent-color);
+}
+
+/* Esconder as barras antigas caso ainda tenhas restos no CSS antigo */
+.burger-btn span:not(.menu-text) {
+    display: none;
+}
+
+/* --- ECRÃ DE ONBOARDING --- */
+.onboarding-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #050505;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.8s ease, visibility 0.8s;
+}
+
+.onboarding-content {
+    text-align: center;
+    animation: pulse 2s infinite;
+}
+
+.onboarding-logo {
+    font-size: 4rem;
+    color: var(--text-main);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+.onboarding-logo span {
+    color: var(--accent-color);
+}
+
+.onboarding-text {
+    color: #555;
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+
+/* Classe dinâmica ativada pelo JS para desvanecer a introdução */
+.onboarding-screen.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+}
