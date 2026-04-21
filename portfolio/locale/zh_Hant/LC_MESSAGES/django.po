@@ -1,0 +1,383 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-19 17:20+0000\n"
+"PO-Revision-Date: 2026-04-19 20:30+0000\n"
+"Last-Translator: Marianaa <marianaa@terminal.dev>\n"
+"Language-Team: Traditional Chinese <zh-hant@li.org>\n"
+"Language: zh_Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: templates/base.html:25
+msgid "[ AFINAR PARÂMETROS DO SISTEMA ]"
+msgstr "[ 調整系統參數 ]"
+
+#: templates/base.html:30
+msgid "1. IDIOMA DA INTERFACE"
+msgstr "1. 介面語言"
+
+#: templates/base.html:46
+msgid "2. AMBIENTE VISUAL"
+msgstr "2. 視覺環境"
+
+#: templates/base.html:49
+msgid "DARK"
+msgstr "DARK"
+
+#: templates/base.html:52
+msgid "LIGHT"
+msgstr "LIGHT"
+
+#: templates/base.html:58
+msgid "3. MOTOR DE RENDERIZAÇÃO"
+msgstr "3. 渲染引擎"
+
+#: templates/base.html:62
+msgid "DINÂMICO (Caos)"
+msgstr "動態 (混亂)"
+
+#: templates/base.html:65
+msgid "ESTÁTICO (Foco)"
+msgstr "靜態 (專注)"
+
+#: templates/base.html:70
+msgid "INICIAR SEQUÊNCIA"
+msgstr "啟動序列"
+
+#: templates/base.html:75
+msgid "A CARREGAR MÓDULOS..."
+msgstr "正在載入模組..."
+
+#: templates/base.html:94
+msgid "Início"
+msgstr "首頁"
+
+#: templates/base.html:95
+msgid "Equipa"
+msgstr "團隊"
+
+#: templates/base.html:96
+msgid "Portfólio"
+msgstr "作品集"
+
+#: templates/base.html:97
+msgid "Definições"
+msgstr "設定"
+
+#: templates/home.html:18
+msgid "BEM-VINDO AO"
+msgstr "歡迎來到"
+
+#: templates/home.html:18
+msgid "CAOS"
+msgstr "混亂"
+
+#: templates/home.html:18
+msgid "CONTROLADO"
+msgstr "受控的"
+
+#: templates/home.html:19
+msgid "Design. Código. Atitude."
+msgstr "設計。程式碼。態度。"
+
+#: templates/home.html:22
+msgid "Ver Portfólio"
+msgstr "查看作品集"
+
+#: templates/home.html:23
+msgid "A Equipa"
+msgstr "團隊陣容"
+
+#: templates/home.html:40
+msgid "O Nosso"
+msgstr "我們的"
+
+#: templates/home.html:40
+msgid "Arsenal"
+msgstr "武器庫"
+
+#: templates/home.html:41
+msgid "Arquitetura Web de alto impacto e performance extrema."
+msgstr "高衝擊力與極限效能的 Web 架構。"
+
+#: templates/home.html:46 templates/home.html:48
+msgid "Desenvolvimento Full-Stack"
+msgstr "全端開發"
+
+#: templates/home.html:46
+msgid ""
+"A nossa especialidade. Desenhamos a base de dados, montamos o servidor "
+"(Django/Python) e desenhamos o frontend para que tudo funcione como um "
+"relógio suíço e bata forte como uma bateria de metal. Segurança, velocidade "
+"e estabilidade. O teu projeto não vai abaixo, não importa o tráfego."
+msgstr ""
+"我們的專長。我們設計資料庫，架設伺服器（Django/Python），並打造前端，讓"
+"一切像瑞士鐘錶般精準運行，同時像金屬樂的鼓點般震撼。安全、速度與穩定。"
+"無論流量多大，你的專案絕不崩潰。"
+
+#: templates/home.html:49
+msgid ""
+"Construção de plataformas robustas, desde as fundações na base de dados até "
+"ao impacto visual no frontend. Código limpo, sem quebras de ritmo."
+msgstr ""
+"建構堅如磐石的平台，從資料庫基礎到前端的視覺衝擊。乾淨的程式碼，節奏絕不中斷。"
+
+#: templates/home.html:52 templates/home.html:54
+msgid "Integração IA & Sistemas"
+msgstr "AI 與系統整合"
+
+#: templates/home.html:52
+msgid ""
+"O futuro já cá está. Integramos modelos de linguagem e Inteligência "
+"Artificial nas tuas aplicações. Automação de processos, agentes inteligentes "
+"e análise de dados em tempo real. Deixamos as máquinas fazer o trabalho "
+"pesado para que a tua equipa se possa focar na estratégia."
+msgstr ""
+"未來已至。我們將語言模型與人工智慧整合到你的應用程式中。流程自動化、智慧"
+"代理與即時數據分析。讓機器處理繁重的工作，讓你的團隊專注於戰略。"
+
+#: templates/home.html:55
+msgid ""
+"Automação avançada e implementação de modelos de inteligência artificial "
+"para colocar o teu projeto na linha da frente."
+msgstr ""
+"進階自動化與人工智慧模型實作，讓你的專案身處最前線。"
+
+#: templates/home.html:58 templates/home.html:60
+msgid "Design Agressivo & UI/UX"
+msgstr "侵略性設計 與 UI/UX"
+
+#: templates/home.html:58
+msgid ""
+"A primeira impressão é a que fica. Não fazemos sites aborrecidos. Criamos "
+"identidades visuais de alto impacto (Nu-Metal, Dark Mode, Industrial) com "
+"foco absoluto na usabilidade. A tua plataforma vai ser memorável, instintiva "
+"e com uma atitude que destrói a concorrência."
+msgstr ""
+"第一印象決定一切。我們不做無聊的網站。我們打造具備高衝擊力的視覺識別"
+"（Nu-Metal、暗黑模式、工業風），並絕對專注於可用性。你的平台將令人難忘、"
+"直覺，並帶有摧毀競爭對手的態度。"
+
+#: templates/home.html:61
+msgid ""
+"Criamos interfaces que não passam despercebidas. Estética pesada, navegação "
+"melódica e uma experiência de utilizador inesquecível."
+msgstr ""
+"我們創造令人無法忽視的介面。重金屬美學、流暢的導航，以及令人難忘的用戶體驗。"
+
+#: templates/home.html:80
+msgid "ENTRA EM"
+msgstr "立即"
+
+#: templates/home.html:80
+msgid "CONTACTO"
+msgstr "聯絡"
+
+#: templates/home.html:94 templates/home.html:151
+msgid "EMAIL"
+msgstr "電子郵件"
+
+#: templates/home.html:107
+msgid "TELEFONE"
+msgstr "電話"
+
+#: templates/home.html:146
+msgid "NOME"
+msgstr "姓名"
+
+#: templates/home.html:147
+msgid "O teu nome..."
+msgstr "你的姓名..."
+
+#: templates/home.html:152
+msgid "O teu email..."
+msgstr "你的電子郵件..."
+
+#: templates/home.html:158
+msgid "MENSAGEM"
+msgstr "訊息"
+
+#: templates/home.html:159
+msgid "O que nos queres dizer?"
+msgstr "你想對我們說什麼？"
+
+#: templates/home.html:163
+msgid "ENVIAR MENSAGEM"
+msgstr "傳送訊息"
+
+#: templates/portfolio.html:20
+msgid "Projetos / Arsenal"
+msgstr "專案 / 武器庫"
+
+#: templates/portfolio.html:25
+msgid "01. Therapy Music"
+msgstr "01. Therapy Music"
+
+#: templates/portfolio.html:26
+msgid ""
+"<p><strong>Plataforma de streaming e melodia. Onde tudo começou.</strong></"
+"p><p>Um projeto construído com sangue, suor e código para conectar os "
+"utilizadores através da música e das emoções. Desenvolvido numa "
+"infraestrutura sólida de Django com um frontend escuro, responsivo e "
+"imersivo. A prova de que a tecnologia pode ter alma.</p><br><a href=\\"
+msgstr ""
+"<p><strong>串流與旋律的平台。一切的起點。</strong></"
+"p><p>一個用血、汗與程式碼建構的專案，透過音樂與情感連結用戶。在堅固的 "
+"Django 基礎架構上開發，配備暗黑、響應式且沉浸的前端。這證明了科技也可以"
+"擁有靈魂。</p><br><a href=\\"
+
+#: templates/portfolio.html:29
+msgid "Plataforma de streaming e melodia. Onde tudo começou."
+msgstr "串流與旋律的平台。一切的起點。"
+
+#: templates/portfolio.html:30 templates/portfolio.html:39
+msgid "[ VER DETALHES ]"
+msgstr "[ 查看詳情 ]"
+
+#: templates/portfolio.html:34
+msgid "02. Real Easy State"
+msgstr "02. Real Easy State"
+
+#: templates/portfolio.html:35
+msgid ""
+"<p><strong>O futuro do imobiliário com inteligência artificial.</strong></"
+"p><p>Uma plataforma desenhada para revolucionar e dominar o mercado "
+"imobiliário. Implementação de algoritmos de IA para sugerir imóveis com "
+"precisão cirúrgica e otimizar todo o processo de procura e venda de "
+"propriedades. Arquitetura pesada a decorrer nos bastidores.</p><br><span "
+"style=\\"
+msgstr ""
+"<p><strong>人工智慧驅動的房地產未來。</strong></"
+"p><p>一個旨在徹底改變並主宰房地產市場的平台。實作 AI 演算法，以外科手術般的"
+"精準度推薦房產，並最佳化整個尋房與銷售流程。重型架構正在幕後運行。</p><br><span style=\\"
+
+#: templates/portfolio.html:38
+msgid "O futuro do imobiliário com inteligência artificial."
+msgstr "人工智慧驅動的房地產未來。"
+
+#: templates/portfolio.html:54 templates/team.html:58
+msgid "Título"
+msgstr "標題"
+
+#: templates/portfolio.html:57 templates/team.html:61
+msgid "Conteúdo detalhado aqui..."
+msgstr "詳細內容在這裡..."
+
+#: templates/settings.html:9
+msgid "Definições de Sistema"
+msgstr "系統設定"
+
+#: templates/settings.html:13
+msgid "Visual / Atitude"
+msgstr "視覺 / 態度"
+
+#: templates/settings.html:20
+msgid "Modo Dinâmico"
+msgstr "動態模式"
+
+#: templates/settings.html:21
+msgid "A cor de destaque muda a cada minuto."
+msgstr "突顯顏色每分鐘改變一次。"
+
+#: templates/settings.html:31
+msgid "Cor Estática"
+msgstr "靜態顏色"
+
+#: templates/settings.html:32
+msgid "Escolhe o teu tom de ataque manual."
+msgstr "選擇你的手動攻擊色調。"
+
+#: templates/settings.html:44
+msgid "Ambiente Visual"
+msgstr "視覺環境"
+
+#: templates/settings.html:45
+msgid "Alterna entre o modo tático (Dark) e o modo diurno (Light)."
+msgstr "在戰術模式 (Dark) 與日間模式 (Light) 之間切換。"
+
+#: templates/settings.html:49
+msgid "Dark Mode"
+msgstr "暗黑模式"
+
+#: templates/settings.html:50
+msgid "Light Mode"
+msgstr "明亮模式"
+
+#: templates/settings.html:57
+msgid "GUARDAR DEFINIÇÕES"
+msgstr "儲存設定"
+
+#: templates/settings.html:59
+msgid "CONFIGURAÇÕES GUARDADAS!"
+msgstr "設定已儲存！"
+
+#: templates/team.html:20
+msgid "A Linha da Frente"
+msgstr "最前線"
+
+#: templates/team.html:25
+msgid "WalterLanDd // Arquiteto Web"
+msgstr "WalterLanDd // Web 架構師"
+
+#: templates/team.html:26
+msgid ""
+"<p><strong>O motor por trás da máquina.</strong></p><p>Especialista em "
+"Python, Django e arquitetura de sistemas. Para mim, o código tem de bater "
+"forte como um refrão de Nu-Metal. Desenho bases de dados à prova de bala e "
+"frontends agressivos mas limpos. Desde a fundação do Therapy Music até à IA "
+"do Real Easy State, o foco é sempre performance extrema e atitude.</p>"
+msgstr ""
+"<p><strong>機器背後的引擎。</strong></p><p>Python、Django 與系統架構專家。對我"
+"來說，程式碼必須像 Nu-Metal 的副歌一樣猛烈。我設計防彈的資料庫與具侵略性但"
+"乾淨的前端。從 Therapy Music 的建立到 Real Easy State 的 AI，焦點始終是極限"
+"效能與態度。</p>"
+
+#: templates/team.html:31
+msgid "Fundador & Arquiteto Web"
+msgstr "創辦人 & Web 架構師"
+
+#: templates/team.html:32
+msgid ""
+"O cérebro técnico por trás da operação. Focado em rasgar código limpo e "
+"montar a infraestrutura de todo o ecossistema com atitude e precisão militar."
+msgstr ""
+"營運背後的技術大腦。專注於編寫乾淨的程式碼，並以軍事般的精準度與態度組建整個"
+"生態系統的基礎架構。"
+
+#: templates/team.html:36
+msgid "Ruben Matos // Visionário"
+msgstr "Ruben Matos // 遠見者"
+
+#: templates/team.html:37
+msgid ""
+"<p><strong>A estratégia que direciona o caos.</strong></p><p>Onde o código "
+"constrói, a visão direciona. Focado em alinhar o produto com o mercado, "
+"afinar os detalhes da experiência do utilizador e garantir que o impacto de "
+"cada projeto é brutal. Juntos, transformamos ideias brutas em plataformas "
+"digitais imbatíveis.</p>"
+msgstr ""
+"<p><strong>引導混亂的戰略。</strong></p><p>程式碼負責建構，願景負責引導。專注於"
+"讓產品與市場對齊、微調用戶體驗的細節，並確保每個專案的衝擊力都是殘酷的。我們"
+"攜手將原始想法轉化為無敵的數位平台。</p>"
+
+#: templates/team.html:42
+msgid "Co-Fundador & Visionário"
+msgstr "共同創辦人 & 遠見者"
+
+#: templates/team.html:43
+msgid ""
+"A força motriz que completa a equipa do Grande Projeto. Focado em alinhar a "
+"estratégia geral e afinar os detalhes para que o impacto seja brutal."
+msgstr ""
+"完善這支「偉大計畫」團隊的驅動力。專注於對齊整體戰略並微調細節，讓衝擊力"
+"達到最猛烈。"

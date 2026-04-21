@@ -1,12 +1,44 @@
-<header class="navbar">
+<header class="navbar" style="border-bottom: 1px solid var(--accent-color); transition: border-color 0.5s ease; padding: 15px 2vw; width: 100%; box-sizing: border-box;">
 
-    <div class="navbar-container">
+    <div class="navbar-container" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
 
-        <a href="/" class="logo">WalTer<span>LanDd</span></a>
+        <a href="/" class="logo" style="text-decoration: none; font-size: 1.5rem; font-weight: bold;">WalTer<span style="color: var(--accent-color); transition: color 0.5s ease;">LanDd</span></a>
         
-        <button id="burger-btn" class="burger-btn" aria-label="Abrir menu">
-            <span class="menu-text">MENU</span>
-        </button>
+        <div class="nav-actions" style="display: flex; align-items: center; gap: 15px;">
+            
+            <div class="lang-selector" style="position: relative; display: inline-block;">
+                <button id="lang-menu-btn">
+                    <span id="current-flag">🇵🇹</span> <span id="current-lang-text">PT</span> ▼
+                </button>
+                
+                <div id="lang-dropdown-content">
+                    <a href="/pt/" class="lang-opt">🇵🇹 PT</a>
+                    <a href="/en/" class="lang-opt">🇬🇧 EN</a>
+                    <a href="/es/" class="lang-opt">🇪🇸 ES</a>
+                    <a href="/fr/" class="lang-opt">🇫🇷 FR</a>
+                    <a href="/de/" class="lang-opt">🇩🇪 DE</a>
+                    <a href="/it/" class="lang-opt">🇮🇹 IT</a>
+                    <a href="/nl/" class="lang-opt">🇳🇱 NL</a>
+                    <a href="/ja/" class="lang-opt">🇯🇵 JA</a>
+                    <a href="/ko/" class="lang-opt">🇰🇷 KO</a>
+                    <a href="/zh-hant/" class="lang-opt">🇹🇼 ZH</a>
+                    <a href="/hi/" class="lang-opt">🇮🇳 HI</a>
+                    <a href="/ar/" class="lang-opt">🇸🇦 AR</a>
+                    <a href="/tr/" class="lang-opt">🇹🇷 TR</a>
+                    <a href="/uk/" class="lang-opt">🇺🇦 UK</a>
+                    <a href="/ur/" class="lang-opt">🇵🇰 UR</a>
+                </div>
+            </div>
+
+            <button id="nav-theme-toggle">
+                [ <span id="nav-theme-label">LIGHT</span> ]
+            </button>
+
+            <button id="burger-btn" class="burger-btn" aria-label="Abrir menu" style="cursor: pointer; background: transparent; border: none; color: var(--text-color);">
+                <span class="menu-text" style="font-family: monospace; letter-spacing: 2px;">MENU</span>
+            </button>
+
+        </div>
 
     </div>
 

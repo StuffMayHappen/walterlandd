@@ -1,23 +1,191 @@
 {% extends 'base.html' %}
+{% load i18n %}
 {% load static %}
 
 {% block content %}
 
-    <section class="hero-section">
+    <section class="hero-section" style="position: relative; overflow: hidden;">
+        
+        <div class="floating-bg">
+            <span class="float-icon icon-1">&lt;/&gt;</span>
+            <span class="float-icon icon-2">#</span>
+            <span class="float-icon icon-3">{ }</span>
+            <span class="float-icon icon-4">/</span>
+        </div>
 
-        <div class="hero-content">
+        <div class="hero-content" style="position: relative; z-index: 10;">
 
-            <h1 class="hero-title">BEM-VINDO AO <span class="highlight">CAOS</span> CONTROLADO</h1>
-
-            <p class="hero-subtitle">Design. Código. Atitude.</p>
+            <h1 class="hero-title">{% trans "BEM-VINDO AO" %} <span class="highlight" style="color: var(--accent-color);">{% trans "CAOS" %}</span> {% trans "CONTROLADO" %}</h1>
+            <p class="hero-subtitle" id="typewriter-text" data-text="{% trans 'Design. Código. Atitude.' %}"></p>
             
             <div class="hero-actions">
-                <a href="{% url 'portfolio' %}" class="btn-primary">Ver Portfólio</a>
-                <a href="{% url 'team' %}" class="btn-secondary">A Equipa</a>
+                <a href="{% url 'portfolio' %}" class="btn-primary">{% trans "Ver Portfólio" %}</a>
+                <a href="{% url 'team' %}" class="btn-secondary">{% trans "A Equipa" %}</a>
             </div>
 
         </div>
 
     </section>
+
+    <section class="services-section" style="position: relative; overflow: hidden; padding: 80px 20px; background-color: var(--bg-dark);">
+        
+        <div class="floating-bg">
+            <span class="float-icon icon-2" style="top: 15%; left: 85%;">[ ]</span>
+            <span class="float-icon icon-4" style="top: 75%; left: 10%;">&amp;&amp;</span>
+        </div>
+
+        <div class="container" style="position: relative; z-index: 10; max-width: 1200px; margin: 0 auto;">
+            
+            <div style="text-align: center; margin-bottom: 60px;">
+                <h2 style="font-size: 2.5rem; color: var(--text-highlight); text-transform: uppercase; letter-spacing: 4px;">{% trans "O Nosso" %} <span style="color: var(--accent-color);">{% trans "Arsenal" %}</span></h2>
+                <p style="color: #888; font-size: 1.2rem; letter-spacing: 2px;">{% trans "Arquitetura Web de alto impacto e performance extrema." %}</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
+
+                <div class="service-card" style="cursor: pointer;" data-title="{% trans 'Desenvolvimento Full-Stack' %}" data-content="<p>{% trans 'A nossa especialidade. Desenhamos a base de dados, montamos o servidor (Django/Python) e desenhamos o frontend para que tudo funcione como um relógio suíço e bata forte como uma bateria de metal. Segurança, velocidade e estabilidade. O teu projeto não vai abaixo, não importa o tráfego.' %}</p>">
+                    <h1 class="service-number">01</h1>
+                    <h3 class="service-title">{% trans "Desenvolvimento Full-Stack" %}</h3>
+                    <p class="service-desc">{% trans "Construção de plataformas robustas, desde as fundações na base de dados até ao impacto visual no frontend. Código limpo, sem quebras de ritmo." %}</p>
+                </div>
+
+                <div class="service-card" style="cursor: pointer;" data-title="{% trans 'Integração IA & Sistemas' %}" data-content="<p>{% trans 'O futuro já cá está. Integramos modelos de linguagem e Inteligência Artificial nas tuas aplicações. Automação de processos, agentes inteligentes e análise de dados em tempo real. Deixamos as máquinas fazer o trabalho pesado para que a tua equipa se possa focar na estratégia.' %}</p>">
+                    <h1 class="service-number">02</h1>
+                    <h3 class="service-title">{% trans "Integração IA & Sistemas" %}</h3>
+                    <p class="service-desc">{% trans "Automação avançada e implementação de modelos de inteligência artificial para colocar o teu projeto na linha da frente." %}</p>
+                </div>
+
+                <div class="service-card" style="cursor: pointer;" data-title="{% trans 'Design Agressivo & UI/UX' %}" data-content="<p>{% trans 'A primeira impressão é a que fica. Não fazemos sites aborrecidos. Criamos identidades visuais de alto impacto (Nu-Metal, Dark Mode, Industrial) com foco absoluto na usabilidade. A tua plataforma vai ser memorável, instintiva e com uma atitude que destrói a concorrência.' %}</p>">
+                    <h1 class="service-number">03</h1>
+                    <h3 class="service-title">{% trans "Design Agressivo & UI/UX" %}</h3>
+                    <p class="service-desc">{% trans "Criamos interfaces que não passam despercebidas. Estética pesada, navegação melódica e uma experiência de utilizador inesquecível." %}</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="contact-section" style="position: relative; overflow: hidden; padding: 80px 20px; background-color: #0a0a0a;">
+
+        <div class="floating-bg">
+            <span class="float-icon icon-1" style="top: 50%; left: 90%;">;</span>
+            <span class="float-icon icon-3" style="top: 20%; left: 5%;">=&gt;</span>
+        </div>
+
+        <div class="container" style="position: relative; z-index: 10; max-width: 1100px; margin: 0 auto;">
+            
+            <div style="text-align: center; margin-bottom: 50px;">
+                <h2 style="font-size: 3rem; color: var(--text-highlight); text-transform: uppercase; letter-spacing: 3px;">{% trans "ENTRA EM" %} <span style="color: var(--accent-color); text-shadow: 0 0 15px color-mix(in srgb, var(--accent-color) 40%, transparent);">{% trans "CONTACTO" %}</span></h2>
+            </div>
+
+            <div class="contact-grid">
+                
+                <div class="contact-info-col">
+
+                    <div class="contact-card glow-card">
+
+                        <div class="icon-circle">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        </div>
+
+                        <div>
+                            <h4 style="color: #fff; margin: 0 0 5px 0; letter-spacing: 1px;">{% trans "EMAIL" %}</h4>
+                            <p style="color: #888; margin: 0;">walter.santos.dev@gmail.com</p>
+                        </div>
+
+                    </div>
+
+                    <div class="contact-card glow-card">
+
+                        <div class="icon-circle">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        </div>
+
+                        <div>
+                            <h4 style="color: #fff; margin: 0 0 5px 0; letter-spacing: 1px;">{% trans "TELEFONE" %}</h4>
+                            <p style="color: #888; margin: 0;">+351 927 041 729</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="contact-form-col glow-card">
+
+                    {% if messages %}
+
+                        <div style="margin-bottom: 20px;">
+
+                            {% for message in messages %}
+
+                                <div style="padding: 15px; border-radius: 8px; font-weight: bold; text-align: center; letter-spacing: 1px;
+                                    {% if message.tags == 'success' %}
+                                        background-color: rgba(76, 175, 80, 0.1); border: 1px solid #4CAF50; color: #4CAF50;
+                                    {% else %}
+                                        background-color: rgba(217, 43, 43, 0.1); border: 1px solid var(--accent-color); color: var(--accent-color);
+                                    {% endif %}
+                                ">
+                                    {{ message }}
+                                </div>
+
+                            {% endfor %}
+
+                        </div>
+
+                    {% endif %}
+
+                    <form action="#" method="POST" class="contact-form">
+
+                        {% csrf_token %}
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+                                <label for="nome">{% trans "NOME" %}</label>
+                                <input type="text" id="nome" name="nome" placeholder="{% trans 'O teu nome...' %}" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">{% trans "EMAIL" %}</label>
+                                <input type="email" id="email" name="email" placeholder="{% trans 'O teu email...' %}" required>
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensagem">{% trans "MENSAGEM" %}</label>
+                            <textarea id="mensagem" name="mensagem" rows="5" placeholder="{% trans 'O que nos queres dizer?' %}" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary full-width">
+                            {% trans "ENVIAR MENSAGEM" %} 
+                            <svg style="margin-left: 10px;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <div id="service-modal" class="modal-overlay">
+
+        <div class="modal-content glow-card">
+
+            <button id="close-modal" class="close-modal-btn">&times;</button>
+            <h2 id="modal-title" style="color: var(--text-highlight); text-transform: uppercase; letter-spacing: 3px; margin-bottom: 20px;">Título</h2>
+            <div id="modal-body" style="color: #aaa; line-height: 1.8; font-size: 1.1rem;">
+                Conteúdo detalhado aqui...
+            </div>
+
+        </div>
+
+    </div>
 
 {% endblock %}

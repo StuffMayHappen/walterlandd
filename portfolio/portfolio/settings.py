@@ -25,6 +25,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -87,14 +88,37 @@ AUTH_PASSWORD_VALIDATORS = [
 #======================
 # Internationalization
 #======================
+from django.utils.translation import gettext_lazy as _
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'pt'
 
 TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
 USE_TZ = True
+
+LANGUAGES = [
+    ('pt', _('Português')),
+    ('en', _('English')),
+    ('es', _('Español')),
+    ('fr', _('Français')),
+    ('ja', _('日本語')),
+    ('tr', _('Türkçe')),
+    ('zh-hant', _('繁體中文')),
+    ('de', _('Deutsch')),
+    ('ru', _('Русский')),
+    ('uk', _('Українська')),
+    ('ur', _('اردو')),
+    ('ar', _('العربية')),
+    ('ko', _('한국어')),
+    ('hi', _('हिन्दी')),
+    ('it', _('Italiano')),
+]
+
+LOCALE_PATHS = [
+    BASE_DIR / 'locale',
+]
 
 
 #==============
@@ -106,3 +130,13 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]
+
+# --- CONFIGURAÇÃO DE EMAIL (SMTP GMAIL) ---
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 465
+EMAIL_USE_TLS = False
+EMAIL_USE_SSL = True
+EMAIL_HOST_USER = 'walter.santos.dev@gmail.com'
+EMAIL_HOST_PASSWORD = 'gnefswyaxidiqfif'
+

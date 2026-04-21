@@ -1,0 +1,145 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-19 22:30+0000\n"
+"PO-Revision-Date: 2026-04-19 22:45+0000\n"
+"Last-Translator: Marianaa <marianaa@terminal.dev>\n"
+"Language-Team: Urdu <ur@li.org>\n"
+"Language: ur\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "BEM-VINDO AO"
+msgstr "خوش آمدید"
+
+msgid "CAOS"
+msgstr "کنٹرولڈ"
+
+msgid "CONTROLADO"
+msgstr "افراتفری میں"
+
+msgid "Design. Código. Atitude."
+msgstr "ڈیزائن۔ کوڈ۔ رویہ۔"
+
+msgid "Ver Portfólio"
+msgstr "پورٹ فولیو دیکھیں"
+
+msgid "A Equipa"
+msgstr "ٹیم"
+
+msgid "O Nosso"
+msgstr "ہمارا"
+
+msgid "Arsenal"
+msgstr "اسلحہ خانہ"
+
+msgid "Arquitetura Web de alto impacto e performance extrema."
+msgstr "اعلیٰ اثر انگیز ویب آرکیٹیکچر اور انتہائی کارکردگی۔"
+
+msgid "Desenvolvimento Full-Stack"
+msgstr "فل اسٹیک ڈویلپمنٹ"
+
+msgid "A nossa especialidade. Desenhamos a base de dados, montamos o servidor (Django/Python) e desenhamos o frontend para que tudo funcione como um relógio suíço e bata forte como uma bateria de metal. Segurança, velocidade e estabilidade. O teu projeto não vai abaixo, não importa o tráfego."
+msgstr "ہماری خصوصیت۔ ہم ڈیٹا بیس ڈیزائن کرتے ہیں، سرور (Django/Python) سیٹ کرتے ہیں، اور فرنٹ اینڈ کو اس طرح تیار کرتے ہیں کہ سب کچھ سوئس گھڑی کی طرح چلے اور میٹل ڈرم کی طرح زوردار ہو۔ سیکیورٹی، رفتار اور استحکام۔ آپ کا پروجیکٹ کبھی ڈاؤن نہیں ہوگا، چاہے ٹریفک کتنا ہی زیادہ کیوں نہ ہو۔"
+
+msgid "Construção de plataformas robustas, desde as fundações na base de dados até ao impacto visual no frontend. Código limpo, sem quebras de ritmo."
+msgstr "ڈیٹا بیس کی بنیادوں سے لے کر فرنٹ اینڈ پر بصری اثر تک، مضبوط پلیٹ فارمز کی تعمیر۔ صاف ستھرا کوڈ، بغیر کسی تعطل کے۔"
+
+msgid "Integração IA & Sistemas"
+msgstr "مصنوعی ذہانت اور سسٹمز کا انضمام"
+
+msgid "O futuro já cá está. Integramos modelos de linguagem e Inteligência Artificial nas tuas aplicações. Automação de processos, agentes inteligentes e análise de dados em tempo real. Deixamos as máquinas fazer o trabalho pesado para que a tua equipa se possa focar na estratégia."
+msgstr "مستقبل یہاں ہے۔ ہم آپ کی ایپلی کیشنز میں لینگویج ماڈلز اور مصنوعی ذہانت کو ضم کرتے ہیں۔ عمل کی خودکاری، ذہین ایجنٹس اور حقیقی وقت میں ڈیٹا کا تجزیہ۔ ہم مشینوں کو بھاری کام کرنے دیتے ہیں تاکہ آپ کی ٹیم حکمت عملی پر توجہ دے سکے۔"
+
+msgid "Automação avançada e implementação de modelos de inteligência artificial para colocar o teu projeto na linha da frente."
+msgstr "آپ کے پروجیکٹ کو ہراول دستے میں لانے کے لیے جدید ترین خودکاری اور مصنوعی ذہانت کے ماڈلز کا نفاذ۔"
+
+msgid "Design Agressivo & UI/UX"
+msgstr "جارحانہ ڈیزائن اور UI/UX"
+
+msgid "A primeira impressão é a que fica. Não fazemos sites aborrecidos. Criamos identidades visuais de alto impacto (Nu-Metal, Dark Mode, Industrial) com foco absoluto na usabilidade. A tua plataforma vai ser memorável, instintiva e com uma atitude que destrói a concorrência."
+msgstr "پہلا تاثر ہی آخری ہوتا ہے۔ ہم بورنگ سائٹس نہیں بناتے ہیں۔ ہم استعمال کی سہولت پر مکمل توجہ دیتے ہوئے اعلیٰ اثر انگیز بصری شناخت (Nu-Metal, Dark Mode, Industrial) تخلیق کرتے ہیں۔ آپ کا پلیٹ فارم یادگار، فطری اور ایک ایسے رویے کا حامل ہوگا جو مقابلے کو ختم کر دے۔"
+
+msgid "Criamos interfaces que não passam despercebidas. Estética pesada, navegação melódica e uma experiência de utilizador inesquecível."
+msgstr "ہم ایسے انٹرفیس بناتے ہیں جو نظر انداز نہیں کیے جا سکتے۔ بھاری جمالیات، سریلی نیویگیشن اور ایک ناقابل فراموش صارف کا تجربہ۔"
+
+msgid "ENTRA EM"
+msgstr "ہم سے"
+
+msgid "CONTACTO"
+msgstr "رابطہ کریں"
+
+msgid "EMAIL"
+msgstr "ای میل"
+
+msgid "TELEFONE"
+msgstr "فون"
+
+msgid "NOME"
+msgstr "نام"
+
+msgid "O teu nome..."
+msgstr "آپ کا نام..."
+
+msgid "O teu email..."
+msgstr "آپ کا ای میل..."
+
+msgid "MENSAGEM"
+msgstr "پیغام"
+
+msgid "O que nos queres dizer?"
+msgstr "آپ ہمیں کیا کہنا چاہتے ہیں؟"
+
+msgid "ENVIAR MENSAGEM"
+msgstr "پیغام بھیجیں"
+
+msgid "Início"
+msgstr "ہوم"
+
+msgid "Equipa"
+msgstr "ٹیم"
+
+msgid "Portfólio"
+msgstr "پورٹ فولیو"
+
+msgid "Definições"
+msgstr "ترتیبات"
+
+msgid "Definições de Sistema"
+msgstr "سسٹم کی ترتیبات"
+
+msgid "Visual / Atitude"
+msgstr "بصری / رویہ"
+
+msgid "Modo Dinâmico"
+msgstr "متحرک موڈ"
+
+msgid "A cor de destaque muda a cada minuto."
+msgstr "نمایاں رنگ ہر منٹ میں بدل جاتا ہے۔"
+
+msgid "Cor Estática"
+msgstr "جامد رنگ"
+
+msgid "Escolhe o teu tom de ataque manual."
+msgstr "اپنے مینوئل اٹیک ٹون کا انتخاب کریں۔"
+
+msgid "Ambiente Visual"
+msgstr "بصری ماحول"
+
+msgid "Alterna entre o modo tático (Dark) e o modo diurno (Light)."
+msgstr "ٹیکٹیکل موڈ (Dark) اور ڈے موڈ (Light) کے درمیان سوئچ کریں۔"
+
+msgid "Dark Mode"
+msgstr "ڈارک موڈ"
+
+msgid "Light Mode"
+msgstr "لائٹ موڈ"
+
+msgid "GUARDAR DEFINIÇÕES"
+msgstr "ترتیبات محفوظ کریں"
+
+msgid "CONFIGURAÇÕES GUARDADAS!"
+msgstr "ترتیبات محفوظ ہو گئیں!"

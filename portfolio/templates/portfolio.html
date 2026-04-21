@@ -1,27 +1,64 @@
 {% extends 'base.html' %}
 
+{% load i18n %}
+
+{% load static %}
+
 {% block content %}
 
-    <section class="container" style="padding: 50px 20px;">
-        
-        <h2 style="color: var(--accent-color); text-transform: uppercase; letter-spacing: 5px; margin-bottom: 40px;">Projetos / Arsenal</h2>
-        
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+    <section class="portfolio-section" style="position: relative; overflow: hidden; padding: 50px 20px; min-height: 80vh;">
 
-            <div style="background: var(--bg-military); padding: 30px; border-left: 5px solid var(--accent-color);">
-                <h3 style="color: #fff;">01. Therapy Music</h3>
-                <p style="color: #aaa;">Plataforma de streaming e melodia. Onde tudo começou.</p>
-                <a href="https://stuffmayhappen.pythonanywhere.com/" target="_blank">VER LIVE</a>
-            </div>
+        <div class="floating-bg">
+            <span class="float-icon icon-1" style="font-size: 5rem;">&lt;/&gt;</span>
+            <span class="float-icon icon-2" style="font-size: 4rem;">//</span>
+            <span class="float-icon icon-3" style="font-size: 6rem; opacity: 0.04;">{ }</span>
+            <span class="float-icon icon-4" style="font-size: 3rem;">0101</span>
+        </div>
 
-            <div style="background: var(--bg-military); padding: 30px; border-left: 5px solid var(--accent-color);">
-                <h3 style="color: #fff;">02. Real Easy State</h3>
-                <p style="color: #aaa;">O futuro do imobiliário com inteligência artificial.</p>
-                <a href="#">EM BREVE</a>
+        <div class="container" style="position: relative; z-index: 10; max-width: 1200px; margin: 0 auto;">
+            
+            <h2 style="color: var(--accent-color); text-transform: uppercase; letter-spacing: 5px; margin-bottom: 60px; text-align: center; text-shadow: 0 0 10px color-mix(in srgb, var(--accent-color) 40%, transparent);">{% trans "Projetos / Arsenal" %}</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
+
+                <div class="portfolio-card glow-card" style="cursor: pointer; padding: 40px; text-align: center;"
+                     data-title="{% trans '01. Therapy Music' %}" 
+                     data-content="{% trans '<p><strong>Plataforma de streaming e melodia. Onde tudo começou.</strong></p><p>Um projeto construído com sangue, suor e código para conectar os utilizadores através da música e das emoções. Desenvolvido numa infraestrutura sólida de Django com um frontend escuro, responsivo e imersivo. A prova de que a tecnologia pode ter alma.</p><br><a href=\'https://stuffmayhappen.pythonanywhere.com/\' target=\'_blank\' class=\'btn-primary\' style=\'display: inline-block; padding: 12px 25px; margin-top: 15px; text-decoration: none;\'>ENTRAR NA PLATAFORMA</a>' %}">
+                    
+                    <h3 style="color: #fff; text-transform: uppercase; letter-spacing: 2px;">01. Therapy Music</h3>
+                    <p style="color: #aaa; margin-bottom: 25px;">{% trans "Plataforma de streaming e melodia. Onde tudo começou." %}</p>
+                    <span style="color: var(--accent-color); font-weight: bold; letter-spacing: 2px;">{% trans "[ VER DETALHES ]" %}</span>
+                </div>
+
+                <div class="portfolio-card glow-card" style="cursor: pointer; padding: 40px; text-align: center;"
+                     data-title="{% trans '02. Real Easy State' %}" 
+                     data-content="{% trans '<p><strong>O futuro do imobiliário com inteligência artificial.</strong></p><p>Uma plataforma desenhada para revolucionar e dominar o mercado imobiliário. Implementação de algoritmos de IA para sugerir imóveis com precisão cirúrgica e otimizar todo o processo de procura e venda de propriedades. Arquitetura pesada a decorrer nos bastidores.</p><br><span style=\'display: inline-block; padding: 12px 25px; margin-top: 15px; border: 2px solid #555; color: #888; letter-spacing: 2px; cursor: not-allowed;\'>STATUS: EM DESENVOLVIMENTO...</span>' %}">
+                    
+                    <h3 style="color: #fff; text-transform: uppercase; letter-spacing: 2px;">02. Real Easy State</h3>
+                    <p style="color: #aaa; margin-bottom: 25px;">{% trans "O futuro do imobiliário com inteligência artificial." %}</p>
+                    <span style="color: var(--accent-color); font-weight: bold; letter-spacing: 2px;">{% trans "[ VER DETALHES ]" %}</span>
+                </div>
+
             </div>
 
         </div>
 
     </section>
+
+    <div id="service-modal" class="modal-overlay">
+
+        <div class="modal-content glow-card">
+
+            <button id="close-modal" class="close-modal-btn">&times;</button>
+
+            <h2 id="modal-title" style="color: var(--text-highlight); text-transform: uppercase; letter-spacing: 3px; margin-bottom: 20px;">{% trans "Título" %}</h2>
+
+            <div id="modal-body" style="color: #aaa; line-height: 1.8; font-size: 1.1rem;">
+                {% trans "Conteúdo detalhado aqui..." %}
+            </div>
+
+        </div>
+
+    </div>
     
 {% endblock %}

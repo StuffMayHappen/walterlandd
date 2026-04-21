@@ -1,22 +1,24 @@
 {% extends 'base.html' %}
 
+{% load i18n %}
+
 {% block content %}
 
     <section class="container" style="padding: 50px 20px; max-width: 800px; margin: 0 auto;">
 
-        <h2 style="color: var(--text-highlight); text-transform: uppercase; letter-spacing: 5px;">Definições de Sistema</h2>
+        <h2 style="color: var(--text-highlight); text-transform: uppercase; letter-spacing: 5px;">{% trans "Definições de Sistema" %}</h2>
         
         <div style="background: var(--bg-military); padding: 30px; border: 1px solid #333; margin-top: 30px;">
 
-            <h4 style="color: var(--accent-color); text-transform: uppercase; letter-spacing: 2px;">Visual / Atitude</h4>
+            <h4 style="color: var(--accent-color); text-transform: uppercase; letter-spacing: 2px;">{% trans "Visual / Atitude" %}</h4>
 
             <hr style="border: 0; border-top: 1px solid #222; margin: 20px 0;">
             
             <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 30px;">
 
                 <div>
-                    <label style="color: #fff; display: block; font-size: 1.1rem;">Modo Dinâmico</label>
-                    <small style="color: #666;">A cor de destaque muda a cada 2 minutos.</small>
+                    <label style="color: #fff; display: block; font-size: 1.1rem;">{% trans "Modo Dinâmico" %}</label>
+                    <small style="color: #666;">{% trans "A cor de destaque muda a cada minuto." %}</small>
                 </div>
 
                 <input type="checkbox" id="dynamic-mode-toggle" style="width: 25px; height: 25px; cursor: pointer;">
@@ -26,19 +28,35 @@
             <div id="static-color-container" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 30px;">
 
                 <div>
-                    <label style="color: #fff; display: block; font-size: 1.1rem;">Cor Estática</label>
-                    <small style="color: #666;">Escolhe o teu tom de ataque manual.</small>
+                    <label style="color: #fff; display: block; font-size: 1.1rem;">{% trans "Cor Estática" %}</label>
+                    <small style="color: #666;">{% trans "Escolhe o teu tom de ataque manual." %}</small>
                 </div>
 
                 <input type="color" id="accent-picker" style="background: none; border: none; width: 50px; height: 50px; cursor: pointer;">
 
             </div>
 
+            <hr style="border-color: #333; margin: 20px 0;">
+
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+
+                <div>
+                    <h4 style="margin: 0; font-size: 1.1rem; color: var(--text-main);">{% trans "Ambiente Visual" %}</h4>
+                    <p style="margin: 5px 0 0 0; font-size: 0.8rem; color: #888;">{% trans "Alterna entre o modo tático (Dark) e o modo diurno (Light)." %}</p>
+                </div>
+
+                <select id="theme-select">
+                    <option value="dark">{% trans "Dark Mode" %}</option>
+                    <option value="light">{% trans "Light Mode" %}</option>
+                </select>
+
+            </div>
+
             <hr style="border: 0; border-top: 1px solid #222; margin: 20px 0;">
             
-            <button id="save-settings-btn" class="btn-primary" style="width: 100%;">GUARDAR DEFINIÇÕES</button>
+            <button id="save-settings-btn" class="btn-primary" style="width: 100%;">{% trans "GUARDAR DEFINIÇÕES" %}</button>
             
-            <p id="save-feedback" style="color: #4CAF50; text-align: center; margin-top: 15px; display: none; font-weight: bold; letter-spacing: 2px;">CONFIGURAÇÕES GUARDADAS!</p>
+            <p id="save-feedback" style="color: #4CAF50; text-align: center; margin-top: 15px; display: none; font-weight: bold; letter-spacing: 2px;">{% trans "CONFIGURAÇÕES GUARDADAS!" %}</p>
         
         </div>
 

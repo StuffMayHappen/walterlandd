@@ -1,7 +1,8 @@
 {% load static %}
+{% load i18n %}
 <!DOCTYPE html>
 
-<html lang="pt">
+<html lang="{{ request.LANGUAGE_CODE }}">
 
     <head>
 
@@ -18,13 +19,72 @@
 
         <div id="onboarding" class="onboarding-screen">
 
-            <div class="onboarding-content">
+            <div class="onboarding-content glow-card" style="max-width: 500px; width: 90%; padding: 40px; text-align: left;">
 
-                <h1 class="onboarding-logo">WalTer<span>LanDd</span></h1>
+                <h1 class="onboarding-logo" style="text-align: center; margin-bottom: 5px;">WalTer<span style="color: var(--accent-color);">LanDd</span></h1>
+                <p class="onboarding-text" style="color: #aaa; text-align: center; margin-bottom: 30px; font-family: monospace;">{% trans "[ AFINAR PARÂMETROS DO SISTEMA ]" %}</p>
 
-                <p class="onboarding-text">A afinar os amplificadores...</p>
+                <div class="config-grid" id="config-panel">
+                    
+                    <div class="config-group" style="margin-bottom: 20px;">
+                        <label style="color: var(--accent-color); font-size: 0.8rem; letter-spacing: 2px; display: block; margin-bottom: 8px;">{% trans "1. IDIOMA DA INTERFACE" %}</label>
+                        <select id="lang-select" class="cyber-input" style="width: 100%; padding: 12px; background: #111; border: 1px solid #333; color: #fff; outline: none; cursor: pointer;">
+                            <option value="pt">Português (PT)</option>
+                            <option value="en">English (EN)</option>
+                            <option value="es">Español (ES)</option>
+                            <option value="fr">Français (FR)</option>
+                            <option value="de">Deutsch (DE)</option>
+                            <option value="nl">Nederlands (NL)</option>
+                            <option value="tr">Türkçe (TR)</option>
+                            <option value="ur">اردو (Urdu - PK)</option>
+                            <option value="it">Italiano (IT)</option>
+                            <option value="ja">日本語 (Japonês)</option>
+                            <option value="ko">한국어 (Coreano)</option>
+                            <option value="ar">العربية (Árabe)</option>
+                            <option value="hi">हिन्दी (Hindi)</option>
+                            <option value="zh-hant">繁體中文 (Chinês)</option>
+                            <option value="uk">Українська (Ucraniano)</option>
+                            <option value="ru">Русский (Russo)</option>
+                        </select>
+                    </div>
 
-                <button id="enter-site" class="btn-primary">ENTRAR</button>
+                    <div class="config-group" style="margin-bottom: 20px;">
+                        <label style="color: var(--accent-color); font-size: 0.8rem; letter-spacing: 2px; display: block; margin-bottom: 8px;">{% trans "2. AMBIENTE VISUAL" %}</label>
+                        <div style="display: flex; gap: 10px;">
+                            <input type="radio" id="theme-dark" name="theme" value="dark" checked style="display: none;">
+                            <label for="theme-dark" class="toggle-btn" style="flex: 1; text-align: center; padding: 12px; background: #111; border: 1px solid #333; color: #aaa; cursor: pointer; transition: 0.3s;">{% trans "DARK" %}</label>
+                            
+                            <input type="radio" id="theme-light" name="theme" value="light" style="display: none;">
+                            <label for="theme-light" class="toggle-btn" style="flex: 1; text-align: center; padding: 12px; background: #111; border: 1px solid #333; color: #aaa; cursor: pointer; transition: 0.3s;">{% trans "LIGHT" %}</label>
+                        </div>
+                    </div>
+
+                    <div class="config-group" style="margin-bottom: 30px;">
+
+                        <label style="color: var(--accent-color); font-size: 0.8rem; letter-spacing: 2px; display: block; margin-bottom: 8px;">{% trans "3. MOTOR DE RENDERIZAÇÃO" %}</label>
+                        
+                        <div style="display: flex; gap: 10px;">
+                            <input type="radio" id="mode-dynamic" name="mode" value="dynamic" checked style="display: none;">
+                            <label for="mode-dynamic" class="toggle-btn" style="flex: 1; text-align: center; padding: 12px; background: #111; border: 1px solid #333; color: #aaa; cursor: pointer; transition: 0.3s;">{% trans "DINÂMICO (Caos)" %}</label>
+                            
+                            <input type="radio" id="mode-static" name="mode" value="static" style="display: none;">
+                            <label for="mode-static" class="toggle-btn" style="flex: 1; text-align: center; padding: 12px; background: #111; border: 1px solid #333; color: #aaa; cursor: pointer; transition: 0.3s;">{% trans "ESTÁTICO (Foco)" %}</label>
+                        </div>
+
+                    </div>
+
+                    <button id="enter-site" class="btn-primary" style="width: 100%;">{% trans "INICIAR SEQUÊNCIA" %} &gt;&gt;</button>
+                </div>
+
+                <div id="boot-loader" style="display: none; margin-top: 20px;">
+
+                    <div class="loader-status" style="color: var(--accent-color); font-family: monospace; letter-spacing: 2px; margin-bottom: 10px; text-align: center;">{% trans "A CARREGAR MÓDULOS..." %} <span id="load-perc">0%</span></div>
+                    
+                    <div class="loader-bar-container" style="width: 100%; height: 5px; background: #111; border-radius: 2px; overflow: hidden;">
+                        <div class="loader-bar-progress" style="width: 0%; height: 100%; background: var(--accent-color); box-shadow: 0 0 15px var(--accent-color); transition: width 0.1s linear;"></div>
+                    </div>
+
+                </div>
 
             </div>
 
@@ -34,13 +94,13 @@
 
         <div id="overlay-menu" class="overlay">
 
-            <button id="close-menu" class="close-btn">&times;</button>
+            <button id="close-menu" class="close-btn" style="color: var(--accent-color);">&times;</button>
 
             <nav class="overlay-content">
-                <a href="{% url 'home' %}">Início</a>
-                <a href="{% url 'team' %}">Equipa</a>
-                <a href="{% url 'portfolio' %}">Portfólio</a>
-                <a href="{% url 'settings' %}">Definições</a>
+                <a href="{% url 'home' %}">{% trans "Início" %}</a>
+                <a href="{% url 'team' %}">{% trans "Equipa" %}</a>
+                <a href="{% url 'portfolio' %}">{% trans "Portfólio" %}</a>
+                <a href="{% url 'settings' %}">{% trans "Definições" %}</a>
             </nav>
 
         </div>
